@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/project_company_content_detail_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="东莞市绿灯网络科技有限公司于2018年01月22日成立。法定代表人涂元宝,公司经营范围包括：计算机网络的技术开发、技术转让、技术咨询、技术服务；网页设计；电子商务的技术咨询；设计、制作、代理、发布国内各类广告；市场营销策划；商务信息咨询等。"/>
+
+    </LinearLayout>
+
+</LinearLayout>

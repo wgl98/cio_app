@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/talents_market_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="UI设计工程师"/>
+
+        <TextView
+            android:id="@+id/talents_market_content_price_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="8dp"
+            android:text="期望薪资"/>
+        
+        <TextView
+            android:id="@+id/talents_market_content_price"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/talents_market_content_price_tag"
+            android:text="7-8K/月"/>
+
+        <LinearLayout
+            android:id="@+id/talents_market_content_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/talents_market_content_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/talents_market_content_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:text="广州"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11dp"
+                android:background="@color/colorGray"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/talents_market_content_workAge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:text="1年"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11dp"
+                android:background="@color/colorGray"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/talents_market_content_education"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:text="本科"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/talents_market_content_tag_layout">
+
+            <TextView
+                android:id="@+id/talents_market_content_first_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_demand_content_stage_background"
+                android:text="工业设计专业"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"/>
+
+            <TextView
+                android:id="@+id/talents_market_content_second_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_demand_content_stage_background"
+                android:text="有项目经验"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"/>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/tag_has_read_recruit"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="-8dp"
+            android:visibility="invisible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E9E9E9"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

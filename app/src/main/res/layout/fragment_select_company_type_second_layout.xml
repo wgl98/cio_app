@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="341dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlue"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="二级"/>
+
+        <TextView
+            android:id="@+id/btn_in_select_company_type_second_fragment"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_button_background_in_select_company_type"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlue"
+            android:text="返回上一级"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_company_second_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:scrollbars="none"
+        android:divider="@null">
+    </ListView>
+
+</LinearLayout>

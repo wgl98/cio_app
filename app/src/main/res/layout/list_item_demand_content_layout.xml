@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/demand_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="东莞CIO协会会员系统开发"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/demand_content_price"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:text="1-5万元"/>
+        
+        <TextView
+            android:id="@+id/demand_content_company"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/demand_content_title"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack"
+            android:text="东莞市绿灯网络科技有限公司"/>
+        
+        <TextView
+            android:id="@+id/demand_content_stage"
+            android:layout_width="62dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/demand_content_company"
+            android:layout_marginTop="2dp"
+            android:text="实施阶段"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_content_stage_background"/>
+        
+        <TextView
+            android:id="@+id/demand_content_state"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorGray"
+            android:textStyle="bold"
+            android:text="已完成"/>
+
+    </RelativeLayout>
+</LinearLayout>

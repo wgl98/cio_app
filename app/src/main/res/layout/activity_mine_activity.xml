@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.activity.MineActivityActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mine_activity_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_mine_activity_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_mine_activity_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mine_activity_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="我的活动"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioGroup
+            android:id="@+id/mine_activity_radioGroup_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mine_activity_radioButton_signing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="报名中"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/mine_activity_radioButton_handling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="进行中"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/mine_activity_radioButton_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="已结束"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/mine_activity_radioButton_no_pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="未通过"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:textStyle="bold"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_activity_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

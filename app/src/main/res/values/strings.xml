@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">云智管</string>
+    <string name="btn_policy">政策服务</string>
+    <string name="btn_conference">会议服务</string>
+    <string name="btn_demand">需求中心</string>
+    <string name="btn_talents">人才服务</string>
+    <string name="btn_project">方案服务</string>
+    <string name="tv_member_move">如您是已认证会员企业新的对接用户，可进行企业账号转移</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

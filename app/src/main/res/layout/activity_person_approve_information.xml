@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.member.personApproveInformation.PersonApproveInformationActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/approve_person_information_detail_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_approve_person_information_detail_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_approve_person_information_detail"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/approve_person_information_detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="认证信息"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:text="张三"/>
+
+                    <ImageView
+                        android:layout_width="23.47dp"
+                        android:layout_height="23.47dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="9dp"
+                        android:background="@mipmap/person_member_tag"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/approve_information_message_tag"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="1998年1月1日"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="11dp"
+                        android:background="@color/colorGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="男"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="11dp"
+                        android:background="@color/colorGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_workTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="一年经验"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="15.07dp"
+                        android:layout_height="14.88dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/approve_information__profession_tag"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="大学本科"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="11dp"
+                        android:background="@color/colorGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_profession"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="工业设计"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="14.79dp"
+                        android:layout_height="14.85dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/approve_information_phone_tag"/>
+
+                    <TextView
+                        android:id="@+id/approve_person_information_content_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="13666666666"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="东莞市绿灯网络科技有限公司"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="设计部"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_character"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:text="民营"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="7dp"
+                    android:text="未上市"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="7dp"
+                    android:text="少于50人"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="7dp"
+                    android:text="信息业"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#66707070">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="职        务："/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="UI设计师"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="单位地址："/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="广东省广州市金安大厦1206"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="年营业额（万元）："/>
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="100万元"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="个人工作经验简介："/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_experience"
+                    android:layout_width="336dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="东莞市绿灯网络科技有限公司"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="企业信息化介绍："/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/approve_person_information_content_information"
+                    android:layout_width="336dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="东莞CIO协会需要一套会员管理系统"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

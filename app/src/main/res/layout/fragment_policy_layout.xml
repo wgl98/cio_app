@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/policy_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite">
+
+        <RadioGroup
+            android:id="@+id/policy_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/policy_title_condition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="产业政策动态"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/policy_title_selected_background"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/policy_title_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="政策项目申报"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/policy_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/policy_title_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="政策项目公示"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/policy_title_selected_background"
+                android:textStyle="bold"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/policy_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/policy_title_layout"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+</RelativeLayout>

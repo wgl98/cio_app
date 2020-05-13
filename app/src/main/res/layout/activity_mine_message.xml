@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.message.MineMessageActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/message_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_message_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_message_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="我的消息"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/resume_notice_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp">
+        
+        <ImageView
+            android:id="@+id/resume_notice_tag"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/resume_notice_tag"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/resume_notice_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="简历通知"/>
+
+            <TextView
+                android:id="@+id/resume_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="你的简历已成功发布!"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/resume_have_message_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recruit_notice_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/recruit_notice_tag"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/recruit_notice_tag"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/recruit_notice_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="招聘通知"/>
+
+            <TextView
+                android:id="@+id/recruit_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="你提交的XXX招聘已成功发布!"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/recruit_have_message_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/demand_notice_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/demand_notice_tag"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/demand_notice_tag"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/demand_notice_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="需求通知"/>
+
+            <TextView
+                android:id="@+id/demand_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="你提交的XXX需求已完成处理!"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/demand_have_message_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_notice_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/activity_notice_tag"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/activity_notice_tag"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/activity_notice_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="活动通知"/>
+
+            <TextView
+                android:id="@+id/activity_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="你已通过XXX活动的报名审核!"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activity_have_message_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/project_notice_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/project_notice_tag"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/project_notice_tag"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/project_notice_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="方案通知"/>
+
+            <TextView
+                android:id="@+id/project_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="你的个人服务已成功发布!"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/project_have_message_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/have_message_red_tag"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_bottom_follow_the_wechat_account"
+        android:layout_width="212dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_message_bottom_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@mipmap/logo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="前往关注公众号"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"/>
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:textSize="12sp"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center_horizontal"
+        android:text="关注公众号方便接收消息通知"/>
+
+</LinearLayout>

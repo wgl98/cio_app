@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/project_company_content_detail_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="东莞CIO协会需要开发一套协会会员系统，帮助会员更好的参与协会活动及向会员提供更方便的服务，系统功能主要包括了福利站、会员服务、管理员线上协作等核心功能。系统包括微信小程序会员端，pc web后台管理系统。"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp">
+
+        <View
+            android:id="@+id/center_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_in_activity_detail_submit_questionnaire"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="填写调查问卷"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/btn_submit_demand_blue_background"
+            android:layout_toLeftOf="@id/center_view"/>
+
+        <Button
+            android:id="@+id/btn_in_activity_detail_submit_sign"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="活动签到"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/btn_submit_demand_blue_background"
+            android:layout_toRightOf="@id/center_view"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.recruit.MineRecruitActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/mine_recruit_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_mine_recruit_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_mine_recruit_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mine_recruit_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="我的招聘"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_recruit_page_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mine_recruit_page_title">
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="70dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:id="@+id/mine_recruit_radioGroup_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mine_recruit_radioButton_has_published"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:text="已发布"
+                    android:gravity="center"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/conference_title_selected_background"
+                    android:textStyle="bold"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/mine_recruit_radioButton_no_published"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:text="未发布"
+                    android:gravity="center"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/conference_title_selected_background"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_recruit_page_have_recruit_message_tag_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <ImageView
+                android:id="@+id/mine_recruit_page_have_recruit_message_tag"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@mipmap/have_message_red_tag"
+                android:layout_alignParentRight="true"/>
+            
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="27dp"
+                android:text="已收简历"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/shape_btn_in_mine_resume_background" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_recruit_content_layout"
+        android:layout_below="@id/mine_recruit_page_content_title"
+        android:layout_above="@id/mine_recruit_page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/mine_recruit_page_has_no_recruit_pag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_recruit_page_title"
+        android:layout_above="@id/mine_recruit_page_bottom"
+        android:background="@color/colorWhite"
+        android:visibility="invisible">
+        
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="147.88dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/tag_has_no_publish_recruit"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_recruit_page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_add_recruit_in_mine_recruit_pag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlue"
+            android:text="新建招聘"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_delete_recruit_in_mine_recruit_pag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:text="删除"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

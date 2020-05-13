@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="个人工作经验简介"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/demand_submit_main_content_layout_background">
+
+            <EditText
+                android:id="@+id/person_information_submit_content_experience"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:hint="请输入个人工作经验简介（包括项目管理经验等）"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:maxLength="150"/>
+
+            <TextView
+                android:id="@+id/person_information_submit_content_experience_text_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="0/150"
+                android:textSize="13sp"
+                android:textColor="#661E1E1E"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_information_submit_third_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_person_information_submit_third_to_second"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="上一步"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/center_view_in_person_information_submit"
+            android:background="@drawable/shape_demand_submit_button_background" />
+
+        <View
+            android:id="@+id/center_view_in_person_information_submit"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_person_information_submit_third_to_fourth"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="下一步"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:layout_toRightOf="@id/center_view_in_person_information_submit"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

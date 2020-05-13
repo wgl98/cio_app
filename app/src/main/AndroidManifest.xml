@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cio_app">
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.policy.policyContent.PolicyDetail"></activity>
+        <activity android:name=".view.mine.member.companyApproveInformation.CompanyApproveInformationActivity" />
+        <activity android:name=".view.select.selectCompanyType.SelectCompanyTypeActivity" />
+        <activity android:name=".view.mine.member.companyMemberSubmit.SubmitCompanyInformationActivity" />
+        <activity android:name=".view.mine.member.memberApproveStatus.MemberApproveStatusActivity" />
+        <activity android:name=".view.mine.member.MoveMemberApproveActivity" />
+        <activity android:name=".view.mine.member.personApproveInformation.PersonApproveInformationActivity" />
+        <activity android:name=".view.mine.member.personMemberSubmit.SubmitPersonInformationActivity" />
+        <activity android:name=".view.mine.member.SelectApproveTypeActivity" />
+        <activity android:name=".view.mine.member.MineMemberApproveActivity" />
+        <activity android:name=".view.mine.service.MineServiceActivity" />
+        <activity android:name=".view.mine.recruit.recruitContent.MineRecruitDetailActivity" />
+        <activity android:name=".view.mine.recruit.recruitList.HasReceiveRecruitActivity" />
+        <activity android:name=".view.mine.recruit.MineRecruitActivity" />
+        <activity android:name=".view.mine.resume.resumeList.HasSubmitResumeActivity" />
+        <activity android:name=".view.mine.resume.resumeList.HasReceicedResumeActivity" />
+        <activity android:name=".view.mine.resume.resumeSubmit.SubmitIntentMessageActivity" />
+        <activity android:name=".view.mine.resume.resumeSubmit.SubmitWorkMessageActivity" />
+        <activity android:name=".view.mine.resume.resumeSubmit.SubmitEducationMessageActivity" />
+        <activity android:name=".view.mine.resume.resumeSubmit.SubmitBaseMessageActivity" />
+        <activity android:name=".view.mine.resume.MineResumeActivity" />
+        <activity android:name=".view.mine.demand.demandContent.MineDemandDetailActivity" />
+        <activity android:name=".view.mine.demand.MineDemandActivity" />
+        <activity android:name=".view.mine.activity.activityContent.ActivityDetailActivity" />
+        <activity android:name=".view.mine.activity.MineActivityActivity" />
+        <activity android:name=".view.mine.message.detail.MessageDetailActivity" />
+        <activity android:name=".view.mine.message.MineMessageActivity" />
+        <activity android:name=".view.mine.information.ModifyMineInformationActivity" />
+        <activity android:name=".view.mine.MineActivity" />
+        <activity android:name=".view.project.projectSubmit.projectSubmitCompany.ProjectCompanySubmitActivity" />
+        <activity android:name=".view.project.projectSubmit.projectSubmitPerson.ProjectPersonSubmitActivity" />
+        <activity android:name=".view.project.projectDetail.projectPerson.ProjectPersonDetailActivity" />
+        <activity android:name=".view.project.projectDetail.projectCompany.ProjectCompanyDetailActivity" />
+        <activity android:name=".view.select.SelectCompanyCharacterActivity" />
+        <activity android:name=".view.select.SelectSiteActivity" />
+        <activity android:name=".view.talents.talentsSubmit.TalentsSubmitActivity" />
+        <activity android:name=".view.talents.talentsDetail.talentsRecruit.TalentsRecruitDetailActivity" />
+        <activity android:name=".view.talents.talentsDetail.talentsMarket.TalentsMarketDetailActivity" />
+        <activity android:name=".view.demand.demandSubmit.DemandSubmitActivity" />
+        <activity android:name=".view.demand.demandDetail.DemandDetailActivity" />
+        <activity android:name=".view.conference.conferenceContent.ConferenceRegisterActivity" />
+        <activity android:name=".view.conference.conferenceContent.ConferenceDetailActivity" />
+        <activity android:name=".view.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6463b659fe3585cd6c593615fc0f6518" />
+
+        <service android:name="com.amap.api.location.APSService" />
+    </application>
+
+</manifest>

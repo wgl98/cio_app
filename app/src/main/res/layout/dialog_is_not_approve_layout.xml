@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="138.5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_conference_sign_fail_dialog_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="您还未进行会员认证！"
+            android:textSize="19sp"
+            android:textColor="#585858"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <com.e.lib_common_ui.borderTextView.BorderTextView
+                android:id="@+id/btn_negative_in_dialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="49.9"
+                android:text="取消"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textColor="@color/colorBlack"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="#707070"/>
+
+            <com.e.lib_common_ui.borderTextView.BorderTextView
+                android:id="@+id/btn_positive_in_dialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="49.9"
+                android:text="前往"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textColor="@color/colorBlue"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

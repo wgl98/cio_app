@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="23dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="22dp"
+            android:background="@color/colorBlue"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="单位负责人"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp">
+        
+        <ImageView
+            android:layout_width="16.53dp"
+            android:layout_height="16.54dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/approve_information_message_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="46dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="姓名"/>
+
+        <TextView
+            android:id="@+id/approve_company_information_contact_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="涂XX"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="18.7dp"
+            android:layout_height="16.24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/approve_information_position_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="46dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="职务"/>
+
+        <TextView
+            android:id="@+id/approve_company_information_contact_content_position"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="CEO"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="14.79dp"
+            android:layout_height="14.85dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/approve_information_phone_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="46dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="移动电话"/>
+
+        <TextView
+            android:id="@+id/approve_company_information_contact_content_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="11111111111"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="17.27dp"
+            android:layout_height="13.08dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@mipmap/approve_information__email_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="46dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="电子邮箱"/>
+
+        <TextView
+            android:id="@+id/approve_company_information_contact_content_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="www.12345.com"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

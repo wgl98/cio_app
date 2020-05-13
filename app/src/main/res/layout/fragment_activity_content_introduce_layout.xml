@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorBlue"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"/>
+
+                <TextView
+                    android:id="@+id/activity_content_detail_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="UI中国第九届用户体验设计大会"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_content_detail_in_approve_state"
+                android:layout_width="93dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_conference_approve_state_background"
+                android:layout_marginLeft="26dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="14dp">
+
+                <TextView
+                    android:id="@+id/date_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:text="活动时间"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlue"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@mipmap/conference_date_tag"
+                    android:layout_toLeftOf="@id/date_tag"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_content_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_height="18dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:text="2020年2月20日14：00"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/address_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:text="活动地址"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="17.16dp"
+                    android:background="@mipmap/conference_address_tag"
+                    android:layout_toLeftOf="@id/address_tag"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_content_detail_address"
+                android:layout_width="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="42dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="广东省东莞市松山湖管委会大学路1号东莞理工学院"
+                android:gravity="center"
+                android:layout_marginTop="7dp"/>
+
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/activity_content_detail_map"
+                android:layout_marginTop="9dp"
+                android:layout_width="343dp"
+                android:layout_height="164dp"
+                android:layout_gravity="center_horizontal">
+            </com.amap.api.maps.TextureMapView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="17.5dp"
+                    android:layout_height="17.43dp"
+                    android:background="@mipmap/conference_contacts_tag"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"/>
+
+                <TextView
+                    android:id="@+id/contacts_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="会务联系人"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlue"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_content_detail_contacts"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_height="21dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="王五 13000000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="企业名称"/>
+        
+        <TextView
+            android:id="@+id/project_company_content_detail_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="东莞市绿灯网络科技有限公司"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:text="公司简介"/>
+
+        <TextView
+            android:id="@+id/project_company_content_detail_company_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="东莞市绿灯网络科技有限公司于2018年01月22日 成立。法定代表人涂元宝,公司经营范围包括：计算 机网络的技术开发、技术转让、技术咨询、技术服 务；网页设计；电子商务的技术咨询；设计、制 作、代理、发布国内各类广告；市场营销策划；商 务信息咨询等。"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="企业联系人"/>
+
+            <TextView
+                android:id="@+id/project_company_content_detail_company_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:text="涂XX"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="企业联系方式"/>
+
+            <TextView
+                android:id="@+id/project_company_content_detail_company_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:text="11111111111"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="企业地址"/>
+
+            <TextView
+                android:id="@+id/project_company_content_detail_company_address"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:text="东莞市松山湖管委会大学路1号"/>
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

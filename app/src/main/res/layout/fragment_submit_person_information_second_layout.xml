@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/person_information_submit_second_bottom">
+
+        <LinearLayout
+            android:layout_width="341dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="工作单位"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/person_information_submit_content_workUnit"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:background="@null"
+                android:hint="请输入单位名称"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="部门"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/person_information_submit_content_department"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:background="@null"
+                android:hint="请输入部门"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="职务"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/person_information_submit_content_position"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:background="@null"
+                android:hint="请输入职务名称"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="单位地址"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/person_information_submit_content_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/person_information_submit_content_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:hint="请选择单位地址"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="5.74dp"
+                    android:layout_height="9.81dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@mipmap/tag_to_add_mine_resume"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="单位性质"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/person_information_submit_content_character_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/person_information_submit_content_character"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:hint="请输入单位性质"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:text="选择"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="是否上市"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/person_information_submit_content_market_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/person_information_submit_content_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:hint="请选择是否上市"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:text="选择"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="单位规模"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/person_information_submit_content_size"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:background="@null"
+                android:hint="请输入单位规模"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="年营业额（万元）"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/person_information_submit_content_profit"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:background="@null"
+                android:hint="请输如年营业额"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="所属行业"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/person_information_submit_content_business_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/person_information_submit_content_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:hint="请选择所属行业"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:text="选择"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="341dp"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/person_information_submit_second_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_person_information_submit_second_to_first"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="上一步"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/center_view_in_person_information_submit"
+            android:background="@drawable/shape_demand_submit_button_background" />
+
+        <View
+            android:id="@+id/center_view_in_person_information_submit"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_person_information_submit_second_to_third"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="下一步"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:layout_toRightOf="@id/center_view_in_person_information_submit"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

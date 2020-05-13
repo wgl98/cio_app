@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.service.MineServiceActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/mine_service_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_mine_service_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_mine_service_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mine_service_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="我的服务"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_service_radioGroup_layout"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/mine_service_page_title">
+
+        <RadioGroup
+            android:id="@+id/mine_service_radioGroup_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mine_service_radioButton_has_published"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="已发布"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:textStyle="bold"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/mine_service_radioButton_no_published"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="未发布"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/conference_title_selected_background"
+                android:textStyle="bold"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_service_content_layout"
+        android:layout_below="@id/mine_service_radioGroup_layout"
+        android:layout_above="@id/mine_service_page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_service_page_has_no_service_pag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mine_service_page_title"
+        android:layout_above="@id/mine_service_page_bottom"
+        android:background="@color/colorWhite"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="147.88dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/tag_has_no_publish_service"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_service_page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_add_service_in_mine_service_pag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlue"
+            android:text="新建服务"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_delete_service_in_mine_service_pag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:text="删除"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.resume.resumeSubmit.SubmitEducationMessageActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/submit_education_message_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_submit_education_message_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_submit_education_message_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submit_education_message_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="教育经历"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/submit_education_message_page_title"
+        android:layout_above="@id/submit_education_message_page_bottom"
+        android:layout_marginTop="30dp">
+
+      <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="入学时间*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/submit_education_message_page_content_beginTime_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/submit_education_message_page_content_beginTime"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:hint="请选择入学时间"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:text="选择"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="毕业时间*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/submit_education_message_page_content_finishTime_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/submit_education_message_page_content_finishTime"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:hint="请选择毕业时间"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:text="选择"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="学历*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/submit_education_message_page_content_background_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/submit_education_message_page_content_background"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:hint="请选择学历"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:text="选择"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="毕业学校*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/submit_education_message_page_content_school"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入毕业学校"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="专业*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/submit_education_message_page_content_profession"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入专业名称"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+       </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/submit_education_message_page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_submit_education_message"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="保存"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

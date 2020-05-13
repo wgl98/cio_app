@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="colorBlue">#3B70FF</color>
+    <color name="colorRed_">#F63E3E</color>
+    <color name="colorYellow">#F6B532</color>
+    <color name="colorGreen">#4BD59D</color>
+    <color name="colorRed">#E50101</color>
+    <color name="colorOrange">#F66132</color>
+    <color name="colorBlack">#1E1E1E</color>
+    <color name="colorGray">#9A9A9A</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>

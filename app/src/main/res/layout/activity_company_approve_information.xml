@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.member.companyApproveInformation.CompanyApproveInformationActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/approve_company_information_detail_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_approve_company_information_detail_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_approve_company_information_detail"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/approve_company_information_detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="认证信息"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:id="@+id/approve_company_information_content_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="东莞市绿灯网络科技有限公司"/>
+
+            <ImageView
+                android:layout_width="23.47dp"
+                android:layout_height="23.47dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:background="@mipmap/company_member_tag"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#E9E9E9">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="21dp">
+            
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="17.16dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/talents_recruit_address_tag"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/approve_company_information_content_address"
+                android:layout_width="273dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:text="广东省广州市越秀区东风中路金安大厦300-1，广东XX科技有限公司"/>
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <RadioGroup
+            android:id="@+id/approve_company_information_content_radioGroup_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/approve_company_information_content_title_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="企业信息"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/approve_company_information_content_title_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="联系方式"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/approve_company_information_content_title_example"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="行业案例"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/approve_company_information_content_title_license"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="资质荣誉"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:textStyle="bold"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/approve_company_information_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

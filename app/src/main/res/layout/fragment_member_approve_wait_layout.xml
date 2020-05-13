@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="138.33dp"
+        android:layout_height="121.38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="159dp"
+        android:background="@mipmap/tag_member_approve_wait"/>
+
+    <TextView
+        android:layout_width="248dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="#F8A600"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="您的会员认证信息正在审核中
+请耐心等待
+"/>
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="会员编号"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/demand_submit_content_number"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入会员编号"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="需求联系人"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/demand_submit_content_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入需求联系人姓名"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="单位名称"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/demand_submit_content_name"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入单位名称"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="所在部门"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/demand_submit_content_department"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入所在部门"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="手机*"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/demand_submit_content_phone"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入11位手机号"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="需求成熟度"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        
+        <RadioGroup
+            android:id="@+id/demand_submit_content_maturity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_investigate_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="调研阶段"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_argue_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="论证阶段" />
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_project_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="立项阶段" />
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_call_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="招标阶段" />
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_implement_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="实施阶段" />
+
+            <RadioButton
+                android:id="@+id/demand_submit_content_other_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                android:drawablePadding="11dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="其他" />
+
+        </RadioGroup>
+        
+        <EditText
+            android:id="@+id/demand_submit_content_other_maturity"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="需求预算（万元）"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/demand_submit_content_price"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:hint="请输入需求预算"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="341dp"
+            android:layout_height="1dp"
+            android:background="#66707070"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/demand_submit_first_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_demand_submit_next"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="下一步"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

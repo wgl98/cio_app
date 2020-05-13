@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.information.ModifyMineInformationActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/modify_information_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_modify_information_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_modify_information_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modify_information_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="修改资料"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="头像"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"/>
+
+            <com.e.lib_common_ui.circle_image_view.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/photo_test"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="11dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E9E9E9"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="用户名"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@null"
+                android:text="张三"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

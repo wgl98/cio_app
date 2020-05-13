@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/project_company_content_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="东莞CIO协会会员系统开发"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/talents_market_content_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_demand_content_stage_background"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="开发与运维"/>
+
+            <TextView
+                android:id="@+id/talents_market_content_workAge"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="查看"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlue"
+                android:layout_alignParentRight="true"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/talents_market_content_first_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:text="东莞市绿灯网络科技有限公司"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#E9E9E9"/>
+
+    </LinearLayout>
+
+</LinearLayout>

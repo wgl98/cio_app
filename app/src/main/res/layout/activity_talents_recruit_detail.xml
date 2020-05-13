@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.talents.talentsDetail.talentsRecruit.TalentsRecruitDetailActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/talents_recruit_content_detail_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_talents_recruit_content_detail_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_talents_recruit_content_detail"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/talents_recruit_content_detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="招聘详情"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/talents_recruit_content_detail_title"
+        android:layout_above="@id/talents_recruit_content_detail_bottom"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:background="#15CCCCCC">
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="UI设计工程师"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="7-8K/月"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="20sp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/talents_recruit_content_item_company"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="广东XX科技有限公司"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="民营"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="50-100人"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="网站开发/运维/推广"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="涂经理"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlue"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="111111111111"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="321dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="#E9E9E9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="17.16dp"
+                    android:background="@mipmap/talents_recruit_address_tag"
+                    android:layout_marginLeft="17dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_address"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="广东省广州市越秀区东风中路金安大厦300-1， 广东XX科技有限公司"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="16dp"
+                    android:background="@color/colorBlue"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="职位要求"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_expect_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:text="广州"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_expect_workTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="1-3年"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_expect_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="本科"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_expect_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="全职"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_expect_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="招3人"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="9dp">
+
+                <ImageView
+                    android:layout_width="16.54dp"
+                    android:layout_height="14.48dp"
+                    android:layout_marginLeft="11dp"
+                    android:background="@mipmap/talents_recruit_age_tag"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/talents_market_content_item_expect_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:text="18-25岁"/>
+
+                <ImageView
+                    android:layout_width="15.07dp"
+                    android:layout_height="14.78dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@mipmap/talents_recruit_profession_tag"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/talents_market_content_item_expect_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="视觉传达等美术相关专业"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="9dp">
+
+                <ImageView
+                    android:layout_width="16.3dp"
+                    android:layout_height="13.74dp"
+                    android:layout_marginLeft="11dp"
+                    android:background="@mipmap/talents_recruit_language_tag"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/talents_market_content_item_expect_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:text="CET-4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="16dp"
+                    android:background="@color/colorBlue"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="职能"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_first_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:background="@drawable/shape_talents_content_feature_background"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="软件UI设计师"/>
+
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_second_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_talents_content_feature_background"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="互联网软件开发工程师"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="16dp"
+                    android:background="@color/colorBlue"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="职位描述"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_position_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1、负责产品移动端、web端、pc端相关产品线的视觉交互设计,把控整体设计质量和规划设计方向"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="16dp"
+                    android:background="@color/colorBlue"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="企业福利"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="6dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/talents_recruit_content_item_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BAT队友、团队nice、丰厚奖金、双休"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#15CCCCCC">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/talents_recruit_content_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#15CCCCCC">
+
+        <Button
+            android:id="@+id/btn_in_talents_recruit_content_detail_send"
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/talents_market_content_detail_bottom"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/btn_submit_demand_blue_background"
+            android:gravity="center"
+            android:text="投递简历"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

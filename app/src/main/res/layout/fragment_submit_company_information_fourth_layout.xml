@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="352dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/company_information_submit_fourth_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="资质与荣誉："
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center" />
+
+            <ListView
+                android:layout_marginTop="25dp"
+                android:id="@+id/list_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:divider="@null">
+            </ListView>
+
+
+            <ImageButton
+                android:id="@+id/btn_add_license_in_company_information_submit"
+                android:layout_width="281dp"
+                android:layout_height="157dp"
+                android:background="@mipmap/tag_add_license"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/company_information_submit_fourth_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_company_information_submit_fourth_to_third"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="上一步"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/center_view_in_company_information_submit"
+            android:background="@drawable/shape_demand_submit_button_background" />
+
+        <View
+            android:id="@+id/center_view_in_company_information_submit"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_company_information_submit_submit"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="提交"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:layout_toRightOf="@id/center_view_in_company_information_submit"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

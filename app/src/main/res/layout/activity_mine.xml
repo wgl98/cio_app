@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.mine.MineActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mine_page_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_mine_page_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_mine_page"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mine_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="个人中心"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:background="@drawable/shape_input_search_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+                <com.e.lib_common_ui.circle_image_view.CircleImageView
+                    android:id="@+id/mine_page_content_photo"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/photo_test"/>
+
+                <ImageView
+                    android:id="@+id/mine_member_tag"
+                    android:layout_width="23.47dp"
+                    android:layout_height="23.47dp"
+                    android:background="@mipmap/company_member_tag"
+                    android:layout_alignBottom="@id/mine_page_content_photo"
+                    android:layout_alignRight="@id/mine_page_content_photo"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="-3dp"/>
+                
+                <TextView
+                    android:id="@+id/mine_page_content_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@id/mine_page_content_photo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="张三"/>
+                
+                <RelativeLayout
+                    android:id="@+id/to_modify_mine_information"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="20.5dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:background="@drawable/shape_input_search_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_approve_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/approve_tag"
+                        android:layout_width="15.04dp"
+                        android:layout_height="20.05dp"
+                        android:background="@mipmap/mine_approve_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/approve_tag"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="17dp"
+                        android:gravity="center"
+                        android:text="会员认证" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorGreen"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="44dp"
+                        android:text="企业会员"/>
+
+                    <ImageView
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="18dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_about_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/about_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_about_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/about_tag"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="关于我们" />
+
+                    <ImageView
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="365dp"
+                android:background="@drawable/shape_input_search_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_message_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/message_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_message_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_toRightOf="@id/message_tag"
+                        android:textSize="17sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="14.5dp"
+                        android:gravity="center"
+                        android:text="我的消息" />
+
+                    <ImageView
+                        android:id="@+id/to_message_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:id="@+id/have_message_tag"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/have_message_red_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_activity_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/activity_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_activity_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_toRightOf="@id/activity_tag"
+                        android:layout_centerVertical="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="14dp"
+                        android:gravity="center"
+                        android:text="我的活动" />
+
+                    <ImageView
+                        android:id="@+id/to_activity_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_demand_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/demand_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_demand_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_toRightOf="@id/demand_tag"
+                        android:layout_centerVertical="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="13.5dp"
+                        android:gravity="center"
+                        android:text="我的需求" />
+
+                    <ImageView
+                        android:id="@+id/to_demand_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_resume_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/resume_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_resume_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/resume_tag"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="我的简历" />
+
+                    <ImageView
+                        android:id="@+id/to_resume_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_recruit_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/recruit_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_recruit_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/recruit_tag"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="11dp"
+                        android:gravity="center"
+                        android:text="我的招聘" />
+
+                    <ImageView
+                        android:id="@+id/to_recruit_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E9E9E9"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_page_content_service_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/service_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mine_service_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/service_tag"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="17dp"
+                        android:gravity="center"
+                        android:text="我的服务" />
+
+                    <ImageView
+                        android:id="@+id/to_service_detail_tag"
+                        android:layout_width="11.12dp"
+                        android:layout_height="19dp"
+                        android:background="@mipmap/mine_to_detail_tag"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+</LinearLayout>

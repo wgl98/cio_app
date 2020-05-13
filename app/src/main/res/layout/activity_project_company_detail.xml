@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.project.projectDetail.projectCompany.ProjectCompanyDetailActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/project_company_detail_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_project_company_detail_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_project_company_detail"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/project_company_detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="服务详情"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/shape_demand_detail_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/view"
+                android:layout_width="3dp"
+                android:layout_height="18dp"
+                android:background="@color/colorBlue"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/project_company_content_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/view"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="东莞CIO协会会员系统开发"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/project_company_content_detail_position"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:text="开发与运维"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape_demand_content_stage_background"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/project_company_content_detail_company"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:text="东莞市绿灯网络科技有限公司"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <RadioGroup
+            android:id="@+id/project_company_content_detail_radioGroup_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/project_company_content_detail_title_base"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="基本信息"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/project_company_content_detail_title_introduce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="产品介绍"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/project_company_content_detail_title_example"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="产品案例"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/demand_detail_short_title_selected_background"
+                android:textStyle="bold"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/project_company_content_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

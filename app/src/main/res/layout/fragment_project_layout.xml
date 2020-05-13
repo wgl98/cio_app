@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/project_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/project_title"
+            android:layout_width="189dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/project_title_company"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="企业服务"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/talents_title_selected_background"
+                android:checked="true"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/project_title_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:text="个人服务"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/talents_title_selected_background"
+                android:textStyle="bold"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/project_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/project_title_layout"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_add_project"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/btn_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

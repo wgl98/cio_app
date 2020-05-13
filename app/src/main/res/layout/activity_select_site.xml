@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/select_site_title"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/btn_back_in_select_site_layout"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_select_site"
+                android:layout_width="12dp"
+                android:layout_height="20.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btn_back"
+                android:layout_marginLeft="13dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/select_site_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="选择地点"/>
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/site_map"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+    </com.amap.api.maps.MapView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_site"
+        android:layout_marginTop="129dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        android:background="@drawable/shape_input_search_background"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/input_search_site"
+            android:layout_width="200dp"
+            android:layout_height="21dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:hint="搜索地点"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" />
+
+        <ImageButton
+            android:id="@+id/button_search_site"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@mipmap/btn_search"
+            android:layout_alignParentRight="true"
+            android:padding="48dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorWhite"
+        android:layout_gravity="bottom">
+        <ListView
+            android:id="@+id/show_site"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.5dp">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="328.5dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        
+        <LinearLayout
+            android:id="@+id/project_person_content_item_first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/project_person_content_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="张三"/>
+
+            <TextView
+                android:id="@+id/project_person_content_item_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:layout_marginLeft="6dp"
+                android:text="UI设计工程师"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_person_content_item_second_layout"
+            android:layout_below="@id/project_person_content_item_first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/project_person_content_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:text="UI设计"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11dp"
+                android:background="@color/colorGray"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"/>
+
+            <TextView
+                android:id="@+id/project_person_content_item_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:text="1年经验"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_person_content_item_third_layout"
+            android:layout_below="@id/project_person_content_item_second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/project_person_content_item_first_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_demand_content_stage_background"
+                android:text="软件开发"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"/>
+
+            <TextView
+                android:id="@+id/project_person_content_item_second_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_demand_content_stage_background"
+                android:text="行业培训"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_person_content_item_fourth_layout"
+            android:layout_below="@id/project_person_content_item_third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:text="服务内容："/>
+
+            <TextView
+                android:id="@+id/project_person_content_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:maxEms="20"
+                android:text="1、负责产品移动端、web端、pc端相关产..."/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E9E9E9"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlue"
+            android:text="查看"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="341dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/project_company_submit_first_bottom"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="企业名称"/>
+
+            <EditText
+                android:id="@+id/project_company_submit_content_name"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:hint="请输入企业名称"
+                android:background="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="公司简介"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/project_company_submit_content_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:hint="请输入公司简介"
+                android:background="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="产品名称"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/project_company_submit_content_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp"
+                android:hint="请输入产品名称"
+                android:background="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#66707070"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="产品所属分类"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/project_company_submit_content_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_OA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="OA"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_HR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="HR" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_CRM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="CRM" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_SRM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="SRM" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_ERP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="ERP" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_BI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="BI" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_MES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="MES" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_BPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="BPM" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_WMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="WMS" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_APS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="APS" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_safe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="网络与安全" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="通讯与设备" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="数据与灾备" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="云应用" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="办公与流程" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_consult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="咨询与培训" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_AI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="智能制造（硬件设备商）" />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_develop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="开发与运维 " />
+
+                <RadioButton
+                    android:id="@+id/project_company_submit_content_type_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_submit_demand_radiobutton_background"
+                    android:drawablePadding="11dp"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:text="其他" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/project_company_submit_content_other_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/project_company_submit_content_other_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="341dp"
+                    android:layout_height="1dp"
+                    android:background="#66707070"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/project_company_submit_first_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_project_company_submit_first_to_second"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:text="下一步"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@drawable/shape_demand_submit_button_background"
+            android:enabled="false"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="138dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:id="@+id/mine_recruit_item_delete_tag"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@mipmap/tag_item_no_select_delete"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/mine_recruit_item_delete_tag"
+            android:layout_marginLeft="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="21dp">
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="UI设计工程师"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"
+                    android:text="7-8K/月"
+                    android:layout_marginRight="14dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:text="广州"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="1-3年"/>
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="本科"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_character"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="全职"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:background="@color/colorGray"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="8dp"
+                    android:text="招3人"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:text="广东XX科技有限公司"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="涂经理"/>
+
+                <TextView
+                    android:id="@+id/mine_recruit_item_phone"
+                    android:layout_toRightOf="@id/mine_recruit_item_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="111111111111"/>
+
+                <RelativeLayout
+                    android:id="@+id/mine_recruit_item_no_publish_layout"
+                    android:layout_width="111dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorYellow"
+                        android:text="等待审核"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_recruit_item_has_publish_layout"
+                    android:layout_width="111dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp">
+
+                    <TextView
+                        android:id="@+id/mine_recruit_item_has_publish_layout_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_toLeftOf="@id/mine_recruit_item_has_publish_layout_toggleButton"
+                        android:layout_marginRight="8dp"
+                        android:text="等待审核"/>
+                    
+                    <ToggleButton
+                        android:id="@+id/mine_recruit_item_has_publish_layout_toggleButton"
+                        android:layout_width="43dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/turn_off"
+                        android:textOn=" "
+                        android:textOff=" "
+                        android:layout_alignParentRight="true"/>
+                    
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

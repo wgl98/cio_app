@@ -13,7 +13,9 @@
       <ImageView
         android:id="@+id/policy_content_picture"
         android:layout_width="149dp"
-        android:layout_height="98dp" />
+        android:layout_height="98dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
 
        <RelativeLayout
         android:layout_width="180dp"

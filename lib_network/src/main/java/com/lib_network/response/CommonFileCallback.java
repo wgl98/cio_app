@@ -3,6 +3,7 @@ package com.lib_network.response;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.util.Log;
 
 import com.lib_network.exception.OkHttpException;
 import com.lib_network.listener.DisposeDataHandle;
@@ -70,6 +71,7 @@ public class CommonFileCallback implements Callback {
                 if (file != null) {
                     mListener.onSuccess(file);
                 } else {
+                    Log.d("解析","失败");
                     mListener.onFailure(new OkHttpException(IO_ERROR, EMPTY_MSG));
                 }
             }
@@ -87,6 +89,7 @@ public class CommonFileCallback implements Callback {
             return null;
         }
 
+        Log.d("解析","开始解析文件信息");
         InputStream inputStream = null;
         File file = null;
         FileOutputStream fos = null;
@@ -97,10 +100,13 @@ public class CommonFileCallback implements Callback {
         try {
             checkLocalFilePath(mFilePath);
             file = new File(mFilePath);
+            Log.d("解析","文件地址"+mFilePath);
+            Log.d("解析","文件信息"+file.toString());
             fos = new FileOutputStream(file);
+            Log.d("解析",fos.toString());
             inputStream = response.body().byteStream();
             sumLength = (double) response.body().contentLength();
-
+            Log.d("解析",inputStream.toString());
             while ((length = inputStream.read(buffer)) != -1) {
                 fos.write(buffer, 0, length);
                 currentLength += length;
@@ -127,9 +133,10 @@ public class CommonFileCallback implements Callback {
     }
 
     private void checkLocalFilePath(String localFilePath) {
-        File path = new File(localFilePath.substring(0,
-                localFilePath.lastIndexOf("/") + 1));
+        /*File path = new File(localFilePath.substring(0,
+                localFilePath.lastIndexOf("/") + 1));*/
         File file = new File(localFilePath);
+        File path = file.getParentFile();
         if (!path.exists()) {
             path.mkdirs();
         }
@@ -137,6 +144,7 @@ public class CommonFileCallback implements Callback {
             try {
                 file.createNewFile();
             } catch (IOException e) {
+                Log.d("解析","创建错误"+e.toString());
                 e.printStackTrace();
             }
         }

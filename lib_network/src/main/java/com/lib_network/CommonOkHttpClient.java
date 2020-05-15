@@ -51,28 +51,19 @@ public class CommonOkHttpClient {
         Call call = mOkHttpClient.newCall(request);
         Log.d("请求地址",request.toString());
         call.enqueue(new CommonJsonCallback(handle));
-        /*call.enqueue(new Callback() {
-            @Override
-            public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                Log.d("数据","请求失败");
-            }
-
-            @Override
-            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                Log.d("数据","请求成功");
-            }
-        });*/
         return call;
     }
 
     public static Call post(Request request, DisposeDataHandle handle) {
         Call call = mOkHttpClient.newCall(request);
+        Log.d("请求地址",request.toString());
         call.enqueue(new CommonJsonCallback(handle));
         return call;
     }
 
     public static Call downloadFile(Request request, DisposeDataHandle handle) {
         Call call = mOkHttpClient.newCall(request);
+        Log.d("请求地址",request.toString());
         call.enqueue(new CommonFileCallback(handle));
         return call;
     }

@@ -5,7 +5,7 @@
     <item android:state_checked="true">
         <layer-list>
 
-            <item android:top="21dp"
+            <item android:top="20dp"
                 android:width="45dp"
                 android:gravity="center">
 

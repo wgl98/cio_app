@@ -44,7 +44,7 @@
                 android:id="@+id/activity_content_detail_in_approve_state"
                 android:layout_width="93dp"
                 android:layout_height="25dp"
-                android:background="@drawable/shape_conference_approve_state_background"
+                android:background="@drawable/shape_conference_approve_wait_state_background"
                 android:layout_marginLeft="26dp"
                 android:textSize="15sp"
                 android:textStyle="bold"

@@ -23,8 +23,8 @@ public class RoundAngleImageView extends AppCompatImageView {
      *
      * 这两个都是画圆的半径
      */
-    private int roundWidth = 10;
-    private int roundHeight = 10;
+    private int roundWidth = 20;
+    private int roundHeight = 20;
     private Paint paint2;
 
     public RoundAngleImageView(Context context, AttributeSet attrs, int defStyle) {

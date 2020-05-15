@@ -30,7 +30,7 @@ public class PolicyContentFragment extends Fragment {
 
     private int parentCategory;
     private int childCategory;
-    private int pageNumber = 0;
+    private int pageNumber;
     private int totalPage;
 
     private LoadingView loadingView;
@@ -148,14 +148,14 @@ public class PolicyContentFragment extends Fragment {
     private void updateView(){
         loadingView.dismiss();
         mList = basePolicyModel.data.content;
-        pageNumber = basePolicyModel.data.pageNumber;
+        pageNumber = basePolicyModel.data.pageNumber+1;
         totalPage = basePolicyModel.data.totalPages;
         mAdapter = new PolicyItemAdapter(mContext,R.layout.list_item_policy_content_layout,mList);
         mAdapter.setOnLoadMoreListener(new PolicyItemAdapter.onLoadMoreListener() {
             @Override
             public void onLoadMore(int position) {
                 if(position + 2 == mList.size() ){
-                    if(pageNumber+1 < totalPage){
+                    if(pageNumber < totalPage){
                         pageNumber++;
                         requestMore();
                     }

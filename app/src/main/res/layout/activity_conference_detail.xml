@@ -45,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="263dp"
         android:layout_below="@id/conference_detail_title"
-        android:background="@drawable/photo_test"/>
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
 
     <RelativeLayout
         android:id="@+id/show_conference_state_in_detail"
@@ -67,7 +68,7 @@
     <RelativeLayout
         android:id="@+id/show_conference_content_layout"
         android:layout_below="@id/show_conference_picture_in_detail"
-        android:layout_above="@id/conference_detail_bottom"
+        android:layout_above="@id/activity_conference_detail_content_bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-33dp"
@@ -132,23 +133,12 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/conference_detail_bottom"
+    <LinearLayout
+        android:id="@+id/activity_conference_detail_content_bottom"
         android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_height="45dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorBlue">
-        
-        <TextView
-            android:id="@+id/btn_in_conference_detail_bottom"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:textSize="17sp"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"/>
-
-    </RelativeLayout>
+        android:orientation="vertical">
+    </LinearLayout>
 
 </RelativeLayout>

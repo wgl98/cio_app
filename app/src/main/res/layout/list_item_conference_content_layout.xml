@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="235dp"
-    android:orientation="vertical">
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="#15CCCCCC">
     
     <LinearLayout
         android:layout_width="354dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
 
         <com.e.lib_common_ui.circle_image_view.RoundAngleImageView
             android:id="@+id/conference_picture"
             android:layout_width="match_parent"
             android:layout_height="171dp"
-            android:background="@drawable/photo_test"/>
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
         
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:background="@drawable/shape_conference_detail_bottom_background">
+            android:background="@drawable/shape_conference_detail_bottom_background"
+            android:elevation="1dp">
             
             <TextView
                 android:id="@+id/conference_title"
@@ -29,8 +33,7 @@
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:textSize="17sp"
-                android:textColor="@color/colorBlack"
-                android:text="UI中国第九届用户体验设计大会"/>
+                android:textColor="@color/colorBlack" />
             
             <TextView
                 android:id="@+id/conference_date"
@@ -40,8 +43,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="12dp"
                 android:textSize="13sp"
-                android:textColor="@color/colorBlack"
-                android:text="2020年2月20日14：00"/>
+                android:textColor="@color/colorBlack" />
 
             <TextView
                 android:id="@+id/conference_state"
@@ -53,7 +55,6 @@
                 android:layout_marginRight="15dp"
                 android:textSize="13sp"
                 android:textStyle="bold"
-                android:text="已结束"
                 android:textColor="@color/colorGray"/>
 
         </RelativeLayout>

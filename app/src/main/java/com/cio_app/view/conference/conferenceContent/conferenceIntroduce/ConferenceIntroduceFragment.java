@@ -25,9 +25,6 @@ public class ConferenceIntroduceFragment extends Fragment {
 
     private View view;
 
-    private TextureMapView mapView;
-    private AMap aMap;
-
     private TextView tv_is_approve_state;
 
     private Context mContext;
@@ -49,19 +46,6 @@ public class ConferenceIntroduceFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_conference_content_introduce_layout,null);
         view = rootView;
         tv_is_approve_state = (TextView) rootView.findViewById(R.id.conference_content_detail_in_approve_state);
-        mapView = (TextureMapView) rootView.findViewById(R.id.conference_content_detail_map);
-        mapView.onCreate(savedInstanceState);
-        if(aMap == null){
-            aMap = mapView.getMap();
-            aMap.moveCamera(CameraUpdateFactory.zoomTo(16));
-            UiSettings uiSettings = aMap.getUiSettings();
-            uiSettings.setZoomControlsEnabled(false);
-            uiSettings.setAllGesturesEnabled(false);
-            aMap.addMarker(new MarkerOptions()
-                    .position(new LatLng(39.906901,116.397972))
-                    .icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory.decodeResource(getResources(),R.mipmap.map_blue_tag))));
-            aMap.moveCamera(CameraUpdateFactory.changeLatLng(new LatLng(39.906901,116.397972)));
-        }
         return rootView;
     }
 
@@ -78,27 +62,23 @@ public class ConferenceIntroduceFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        mapView.onResume();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        mapView.onPause();
     }
 
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mapView.onDestroy();
     }
 
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        mapView.onSaveInstanceState(outState);
     }
 
     @Override

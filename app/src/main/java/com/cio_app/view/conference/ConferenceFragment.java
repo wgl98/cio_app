@@ -28,6 +28,10 @@ public class ConferenceFragment extends Fragment implements RadioGroup.OnChecked
 
     private RadioGroup radioGroup;
 
+    private ConferenceSignFragment signFragment;
+    private ConferenceHandleFragment handleFragment;
+    private ConferenceFinishedFragment finishedFragment;
+
     public static Fragment newInstance() {
         ConferenceFragment conferenceFragment = new ConferenceFragment();
         return conferenceFragment;
@@ -40,7 +44,19 @@ public class ConferenceFragment extends Fragment implements RadioGroup.OnChecked
 
         manager = getFragmentManager();
         transaction = manager.beginTransaction();
-        transaction.add(R.id.conference_content_layout, ConferenceSignFragment.newInstance());
+
+        signFragment = (ConferenceSignFragment) ConferenceSignFragment.newInstance();
+        handleFragment = (ConferenceHandleFragment) ConferenceHandleFragment.newInstance();
+        finishedFragment = (ConferenceFinishedFragment) ConferenceFinishedFragment.newInstance();
+
+        transaction.add(R.id.conference_content_layout,signFragment);
+        transaction.add(R.id.conference_content_layout,handleFragment);
+        transaction.add(R.id.conference_content_layout,finishedFragment);
+
+        transaction.show(signFragment);
+        transaction.hide(handleFragment);
+        transaction.hide(finishedFragment);
+
         transaction.commit();
     }
 
@@ -63,13 +79,19 @@ public class ConferenceFragment extends Fragment implements RadioGroup.OnChecked
         transaction = manager.beginTransaction();
         switch (checkedId) {
             case R.id.conference_title_signing:
-                transaction.replace(R.id.conference_content_layout, ConferenceSignFragment.newInstance());
+                transaction.show(signFragment);
+                transaction.hide(handleFragment);
+                transaction.hide(finishedFragment);
                 break;
             case R.id.conference_title_handing:
-                transaction.replace(R.id.conference_content_layout, ConferenceHandleFragment.newInstance());
+                transaction.show(handleFragment);
+                transaction.hide(signFragment);
+                transaction.hide(finishedFragment);
                 break;
             case R.id.conference_title_finish:
-                transaction.replace(R.id.conference_content_layout, ConferenceFinishedFragment.newInstance());
+                transaction.show(finishedFragment);
+                transaction.hide(handleFragment);
+                transaction.hide(signFragment);
                 break;
         }
         transaction.commit();

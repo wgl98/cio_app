@@ -1,15 +1,23 @@
 package com.cio_app.view.conference.conferenceContent;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
 import com.cio_app.R;
+import com.cio_app.api.RequestCenter;
+import com.cio_app.model.conference.conferenceRegistered.ConferenceRegisteredModel;
 import com.e.lib_common_ui.base.BaseActivity;
+import com.lib_network.listener.DisposeDataListener;
+import com.lib_network.request.RequestParams;
 
 public class ConferenceRegisterActivity extends BaseActivity implements View.OnClickListener {
+
+    private int id;
 
     private EditText et_name;
     private EditText et_workAddress;
@@ -18,10 +26,12 @@ public class ConferenceRegisterActivity extends BaseActivity implements View.OnC
     private EditText et_phone;
     private EditText et_email;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conference_register);
+        id = getIntent().getIntExtra("id",-1);
         initView();
     }
 
@@ -48,18 +58,41 @@ public class ConferenceRegisterActivity extends BaseActivity implements View.OnC
                 finish();
                 break;
             case R.id.conference_register_btn:
-                Intent intent1 = new Intent();
-                intent1.putExtra("name",et_name.getText());
-                intent1.putExtra("workAddress",et_workAddress.getText());
-                intent1.putExtra("department",et_department.getText());
-                intent1.putExtra("position",et_position.getText());
-                intent1.putExtra("phone",et_phone.getText());
-                intent1.putExtra("email",et_email.getText());
-                setResult(RESULT_OK,intent1);
-                finish();
+                postRegisterData();
                 break;
             default:
                 break;
         }
+    }
+
+    //提交报名信息
+    private void postRegisterData(){
+        RequestParams params = new RequestParams();
+        params.put("name",et_name.getText().toString());
+        params.put("phone",et_phone.getText().toString());
+        params.put("company",et_workAddress.getText().toString());
+        params.put("position",et_position.getText().toString());
+        params.put("email",et_email.getText().toString());
+        RequestCenter.postConferenceRegisterData(String.valueOf(id),params, new DisposeDataListener() {
+            @Override
+            public void onSuccess(Object responseObj) {
+                ConferenceRegisteredModel value = (ConferenceRegisteredModel) responseObj;
+                Intent intent = new Intent();
+               if(value.code.equals("200")){
+                   setResult(RESULT_OK,intent);
+               }else {
+                   setResult(RESULT_CANCELED,intent);
+               }
+               finish();
+            }
+
+            @Override
+            public void onFailure(Object reasonObj) {
+                Log.d("上传报名数据","失败");
+                Intent intent = new Intent();
+                setResult(RESULT_CANCELED,intent);
+                finish();
+            }
+        });
     }
 }
